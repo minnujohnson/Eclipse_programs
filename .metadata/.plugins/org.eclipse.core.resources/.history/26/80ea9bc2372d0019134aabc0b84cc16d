@@ -1,0 +1,35 @@
+package NewPkg;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Scanner;
+class User4 {
+	public static String extractMax(String s) throws ParseException
+	{ 
+		String s1 = null;
+		if(s.matches("[0-9]{2}-[0-9]{2}-[0-9]{4}"))
+		{
+			SimpleDateFormat sdf=new SimpleDateFormat("MM/dd/yyyy");
+			SimpleDateFormat sdf1=new SimpleDateFormat("EEEE");
+			Date d1=sdf.parse(s);
+			sdf.setLenient(false);
+			String s1=sdf1.format(d1);
+			
+			
+			
+		}
+		
+		return s1;
+	
+	}
+}
+
+
+public class Vow5 
+{public static void main(String[] args) throws ParseException
+{Scanner sc = new Scanner(System.in);
+
+String s=sc.next();
+
+System.out.println(User4.extractMax(s));
+}}

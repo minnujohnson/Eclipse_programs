@@ -1,0 +1,24 @@
+package NewPkg;
+
+import java.util.Scanner;
+class User3 {
+	public static String extractMax(String s1,String s2)
+	{ 
+		System.out.println("rabbir");
+	StringBuffer sb=new StringBuffer();
+	for(int i=0;i<s1.length()-1;i++)
+	{
+		sb.append(s1.charAt(i));
+		sb.append(s2);
+}
+	sb.append(s1.charAt(s1.length()-1));
+	return sb.toString();
+	}
+}
+
+public class Vow5 
+{public static void main(String[] args)
+{Scanner sc = new Scanner(System.in);
+String s1=sc.nextLine();
+String s2=sc.nextLine();
+System.out.println(User3.extractMax(s1,s2));}}

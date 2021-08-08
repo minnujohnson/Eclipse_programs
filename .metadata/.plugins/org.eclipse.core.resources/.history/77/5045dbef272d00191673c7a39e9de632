@@ -1,0 +1,23 @@
+package NewPkg;
+
+import java.util.Scanner;
+class User3 {
+	public static String extractMax(String s1,String s2){
+		StringBuffer sb=new StringBuffer(s1);
+		//sb.reverse();
+		System.out.println(sb);
+		/*System.out.println(sb);
+		for(int i=0;i<s1.length()-1;i++)
+		{
+			sb.append(sb.charAt(i));
+			sb.append(s2);
+		}
+		sb.append(s1.charAt(s1.length()-1));*/
+		return sb.toString();
+	}
+}
+public class Vow5 {public static void main(String[] args) 
+{Scanner sc = new Scanner(System.in);
+String s1=sc.next();
+String s2=sc.next();
+System.out.println(User3.extractMax(s1,s2));}}
